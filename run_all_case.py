@@ -49,9 +49,9 @@ if __name__ == '__main__':
 
     print(send_email)
 
-    file_path=send_email.SendEmail.new_report(testreport_dir)
-    mail_body=send_email.SendEmail.read_report(file_path)
-    send_email.SendEmail.email(mail_body,report_basepath)
+    file_path=send_email.SendEmail().new_report(testreport_dir)
+    mail_body=send_email.SendEmail().read_report(file_path)
+    send_email.SendEmail().email(mail_body,report_basepath)
 
 
     #关闭文件
