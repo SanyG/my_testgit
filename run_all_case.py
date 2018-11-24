@@ -15,8 +15,8 @@ report_dir=os.path.dirname(os.path.realpath(__file__))
 
 testreport_dir=os.path.join(report_dir,'report')
 
-#print(testcase_dir)
-#print(testreport_dir)
+print(testcase_dir)
+print(testreport_dir)
 
 
 #自动搜索指定目录下的cas，构造测试集, 执行顺序是命名顺序：先执行test_add，再执行test_sub
