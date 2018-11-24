@@ -34,7 +34,7 @@ if __name__ == '__main__':
     #获取当前时间
     now=time.strftime('%Y-%y-%d-%H_%m_%s',time.localtime(time.time()))
 
-    #报告文件路径
+    #报告文件路径、名称
     report_basepath=os.path.join(testreport_dir,'result_'+now+'.html')
 
 
@@ -52,4 +52,4 @@ if __name__ == '__main__':
 
     file_path=send_email.SendEmail.new_report(testreport_dir)
     mail_body=send_email.SendEmail.read_report(file_path)
-    send_email.SendEmail.send_email(mail_body,report_basepath,now)
+    send_email.SendEmail.send_email(mail_body,report_basepath)

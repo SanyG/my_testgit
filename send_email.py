@@ -39,7 +39,7 @@ class SendEmail():
         f.close()
 
 
-    def send_email(reportfile,new_report_fail,now):
+    def send_email(reportfile,new_report_fail):
 
         # 发送者邮箱的SMTP服务器地址
         smtpserver='smtp.163.com'
