@@ -12,7 +12,7 @@ from email.mime.application import MIMEApplication
 class SendEmail():
 
     #取最新的测试报告
-    def new_report(test_dir):
+    def new_report(sel1f,test_dir):
 
 
         # 列举test_dir目录下的所有文件，结果以列表形式返回
@@ -26,7 +26,7 @@ class SendEmail():
 
         return file_path
 
-    def read_report(newfile):
+    def read_report(self,newfile):
         #打开最新测试报告文件
         f=open(newfile,'rb')
 
@@ -39,7 +39,7 @@ class SendEmail():
         f.close()
 
 
-    def email(reportfile,new_report_fail):
+    def email(self,reportfile,new_report_fail):
 
         # 发送者邮箱的SMTP服务器地址
         smtpserver='smtp.163.com'
