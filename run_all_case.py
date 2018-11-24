@@ -52,4 +52,4 @@ if __name__ == '__main__':
 
     file_path=send_email.SendEmail.new_report(testreport_dir)
     mail_body=send_email.SendEmail.read_report(file_path)
-    send_email.SendEmail.send_email(mail_body,report_basepath)
+    send_email.SendEmail.email(mail_body,report_basepath)
