@@ -47,9 +47,12 @@ if __name__ == '__main__':
     #批量执行用例
     runner.run(run_case())
 
-    #关闭文件
-    fp.close()
+    print(send_email)
 
     file_path=send_email.SendEmail.new_report(testreport_dir)
     mail_body=send_email.SendEmail.read_report(file_path)
     send_email.SendEmail.email(mail_body,report_basepath)
+
+
+    #关闭文件
+    fp.close()
