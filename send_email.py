@@ -107,7 +107,7 @@ class SendEmail():
         #except smtplib.SMTPException:
             #print("Error: 无法发送邮件")
 
-        smtp.quit()  # 发送完毕后退出smtp
+        #smtp.quit()  # 发送完毕后退出smtp
         print('success')
 
 
