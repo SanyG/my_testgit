@@ -3,6 +3,7 @@ import unittest
 import os
 import HTMLTestRunner
 import time
+import send_email
 
 #获取测试用例路径
 test_dir=os.path.dirname(os.path.realpath(__file__))
@@ -48,3 +49,7 @@ if __name__ == '__main__':
 
     #关闭文件
     fp.close()
+
+    file_path=send_email.SendEmail.new_report(testreport_dir)
+    mail_body=send_email.SendEmail.read_report(file_path)
+    send_email.SendEmail.send_email(mail_body,report_basepath,now)
