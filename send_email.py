@@ -101,10 +101,6 @@ class SendEmail():
         smtp.connect(smtpserver,25) #（缺省）默认端口是25 也可以根据服务器进行设定
         smtp.login(username,password)  #登录邮箱用户名和密码,#登陆smtp服务器
         smtp.sendmail(sender,receiver,msg.as_string())
-        #print('邮件发送成功')
-
-        #except smtplib.SMTPException:
-            #print("Error: 无法发送邮件")
 
         #smtp.quit()  # 发送完毕后退出smtp
         print('success')
