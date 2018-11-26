@@ -97,7 +97,6 @@ import time
 import unittest
 from xml.sax import saxutils
 
-
 # ------------------------------------------------------------------------
 # The redirectors below are used to capture output during testing. Output
 # sent to sys.stdout and sys.stderr are automatically captured. However

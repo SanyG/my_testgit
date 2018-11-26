@@ -8,7 +8,6 @@ from email.mime.multipart import MIMEMultipart
 import os
 from email.mime.application import MIMEApplication
 
-
 class SendEmail():
 
     #取最新的测试报告
@@ -45,15 +44,15 @@ class SendEmail():
         smtpserver='smtp.163.com'
 
         # 发送者的登陆用户名和密码
-        username='xuan942458237@163.com'
+        username='XX@163.com'
 
-        password='xuan778899'
+        password='XX'
 
         # 发送者邮箱
-        sender='xuan942458237@163.com'
+        sender='XX@163.com'
 
         #接收者邮箱
-        receiver=['942458237@qq.com','xuan942458237@163.com']
+        receiver=['XX@qq.com','XX@163.com']
 
         # 发送邮件 ，这里有三个参数
         '''
@@ -69,10 +68,10 @@ class SendEmail():
 
         msg = MIMEMultipart()
 
-        #msg['From'] = Header('xuan942458237@163.com')  #发送邮箱地址
+        #msg['From'] = Header('XX@163.com')  #发送邮箱地址
         msg['From']=sender
 
-        #msg['To'] = Header('942458237@qq.com') #收件邮箱地址
+        #msg['To'] = Header('XX@qq.com') #收件邮箱地址
 
         #发送多人邮件
         msg['To']=','.join(receiver)
